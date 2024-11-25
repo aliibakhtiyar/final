@@ -1,0 +1,161 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: #f5f5f5;
+  }
+  
+  
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #000000;
+    font-size: 40px;
+  }
+  
+  .topic-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .topic {
+    background: #eaeaeae6;
+    margin: 10px 0;
+    padding: 15px;
+    /* border: 1px solid #333; */
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .like-btn i {
+    /* color: rgba(0, 132, 255, 0.54); */
+    color: #767676;
+  }
+  .downvote-btn i {
+    /* color: rgba(209, 16, 16, 0.579); */
+    color: #767676;
+  }
+  .save-btn i{
+    color: #3e4e3ab3;
+  }
+  .topic:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .topic h3 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 600;
+  }
+  
+  .topic h3 a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .topic-actions {
+    margin-top: 10px;
+  }
+  .topic p{
+    color: #555555;
+  }
+  .topic-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .topic-actions img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  footer {
+    background: #1f1f1f;
+    color: #aaa;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  #discussion .post {
+    background: #ECECEC;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000000;
+  }
+  
+  #discussion .reply-box {
+    margin-top: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ECECEC;
+    color: #000000;
+  }
+  
+  #discussion button {
+    background: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #discussion button:hover {
+    background: #45a049;
+  }
+  #discussion textarea:hover{
+    background-color: white
+  }
+  .popup {
+    position: fixed;
+    top: 100px;
+    right: -300px; 
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: transform 0.5s ease, right 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .popup.hidden {
+    display: none;
+  }
+  
+  .popup.show {
+    display: block;
+    right: 20px; 
+    opacity: 1;
+  }
+  .popup.error {
+    background-color: #dc3545; /* Red color for error */
+  }
+  .liked #likeIcon {
+    color: rgba(0, 132, 255, 0.54); /* color when liked */
+  }

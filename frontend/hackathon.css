@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f9fafc;
+}
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.hackathon-card:hover{
+    border: 2px solid #3770FF;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hackathon-card{
+    background-image:  url('1000_F_683189527_FcvIJ5kAuNh6b4qKbyonXrs3NY14ooJ7.jpg');
+}
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.all-hackathons-btn {
+  background-color: #f0f7ff;
+  border: 1px solid #d2e3ff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.all-hackathons-btn:hover {
+  background-color: #e6f2ff;
+}
+
+.hackathon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hackathon-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.card-icons .icon-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hackathon-type {
+  color: #888;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.hackathon-theme {
+  display: inline-block;
+  background-color: #f3f4f7;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.hackathon-details {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.badge {
+  background-color: #eef1f5;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.participants {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatars {
+  display: flex;
+  gap: 5px;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+.load-more-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .load-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  

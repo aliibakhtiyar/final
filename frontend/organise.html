@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="organise.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="navbar flex"> 
+        <div class="leftNav">
+            <h1>HackInsider</h1>
+        </div>
+        <div class="rightNav flex">
+            <h2><a href="homepage.html">Home</a></h2>
+            <h2><a href="organise.html">Organize Hackathon</a></h2>
+            <h2><a href="wearehiring.html">We're Hiring</a></h2>
+            <h2><a href="forum.html">Forum</a></h2>
+            <button id="logout" onclick="window.location.href='index.html'">Logout</a></button>
+            <img src="Google_Translate_logo.png" alt="" srcset="">
+            <i class="ri-menu-fill hidden"></i>
+  
+        </div>
+    </div>
+    <div class="main-container blockan">
+        <div class="text-section">
+            <h1 class="main-heading">Organizing Hackathons with HackInsider Platform</h1>
+            <p class="description">
+                We help companies/individuals innovate faster and build better products, using real user rapid iterations.
+            </p>
+            <h2 class="sub-heading">I want to organize..</h2>
+            <div class="button-group">
+                <button class="btn-community">Community Hackathon</button>
+                <button class="btn-corporate">Corporate Hackathon</button>
+            </div>
+        </div>
+        <div class="image-section">
+            <img class="illustration-image" src="https://s3bucket-incpro.s3.eu-north-1.amazonaws.com/2022-02-11T08%3A41%3A21.609Z-undraw_control_panel_re_y3ar.svg" alt="Illustration">
+        </div>
+    </div>
+    <div class="wrapper1 blockan">
+        <div class="container1">
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <div class="number" data-target-number="12639">0</div>
+                No of People
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-hexagon-nodes"></i>
+                <div class="number" data-target-number="2537">0</div>
+                Organisers
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <div class="number" data-target-number="2234030">0</div>
+                Lines of Code
+            </div>
+            <div class="card">
+                <i class="fa-regular fa-circle-check"></i>
+                <div class="number" data-target-number="23998">0</div>
+                Projects Done
+            </div>
+        </div>
+    </div>
+   
+
+
+  <div class="wrrapper blockan">
+    <div class="container">
+        <h1>Organize a hackathon</h1>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <form id="cardiologyForm">
+            <!-- Personal Information -->
+            <div class="form-section active" data-section="1">
+                <h2 class="section-title">Personal Information</h2>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+            </div>
+
+            <!-- Insurance Details -->
+            <div class="form-section" data-section="2">
+                <h2 class="section-title">Social media links</h2>
+                <div class="form-group">
+                    <label for="provider">Linkedin Profile</label>
+                    <input type="text" id="provider" required>
+                </div>
+                <div class="form-group">
+                    <label for="policyNumber">GitHub Profile</label>
+                    <input type="text" id="policyNumber" required>
+                </div>
+            </div>
+
+            <!-- Medical History -->
+            <div class="form-section" data-section="3">
+                <h2 class="section-title"></h2>
+                <div class="form-group">
+                    <label>What type of hackathon are we organizing?</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hypertension">
+                            <label for="hypertension">Onsite</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="diabetes">
+                            <label for="diabetes">Virtual</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cholesterol">
+                            <label for="cholesterol">Hybrid</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="familyHistory">What will be the theme or focus of the hackathon?</label>
+                    <select id="familyHistory" required>
+                        <option value="">Select...</option>
+                        <option value="1">Open-ended innovation</option>
+                        <option value="2">NoIndustry-specific (e.g., healthcare, fintech, etc.)</option>
+                        <option value="3">Technology-specific (e.g., AI, Blockchain, etc.)</option>
+                        <option value="4">Social impact</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="medications">write a brief description about your theme</label>
+                    <textarea id="medications" rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- Heart-Related Symptoms -->
+            <div class="form-section" data-section="4">
+                <h2 class="section-title"></h2>
+                <div class="form-group">
+                    <label>What is the target audience for the hackathon?</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="chestPain">
+                            <label for="chestPain"> Students</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="shortnessBreath">
+                            <label for="shortnessBreath">Professionals</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="irregularHeartbeat">
+                            <label for="irregularHeartbeat">Startups and entrepreneurs</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="irregularHeartbeat">
+                            <label for="irregularHeartbeat">A mix of alls</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="otherSymptoms">What is the main objective of this hackathon?</label>
+                    <textarea id="otherSymptoms" rows="3"></textarea>
+                </div>
+            </div>
+
+            <!-- Lifestyle Factors -->
+            <div class="form-section" data-section="5">
+                <h2 class="section-title"></h2>
+                <div class="form-group">
+                    <label for="smokingStatus">Is there a clear timeline for the event?</label>
+                    <select id="smokingStatus" required>
+                        <option value="">Select...</option>
+                        <option value="current">Yes</option>
+                        <option value="former">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="alcohol">Do we have the necessary resources for participants (e.g., internet, APIs, datasets)?</label>
+                    <select id="alcohol" required>
+                        <option value="">Select...</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Previous Cardiac Tests -->
+            <div class="form-section" data-section="6">
+                <h2 class="section-title"></h2>
+                <div class="form-group">
+                    <label>What is the maximum team size?</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="ekg">
+                            <label for="ekg">1</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="stressTest">
+                            <label for="stressTest">3</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="echocardiogram">
+                            <label for="echocardiogram">5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="surgeries">Will all participants receive certificates or recognition?</label>
+                    <select id="surgeries" required>
+                        <option value="">Select...</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn-prev" id="prevBtn" style="display: none;">Previous</button>
+                <button type="button" class="btn-next" id="nextBtn">Next</button>
+                <button type="submit" class="btn-submit" id="submitBtn" style="display: none;">Submit</button>
+            </div>
+        </form>
+    </div>
+    <img src="—Pngtree—people working in a table_7537097.png" alt="">
+</div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <p>
+              We love <span class="highlight-blue">software <br></span> and the
+              <span class="highlight-orange">people <br></span> who build it.
+            </p>
+            <div class="social-icons">
+              <a href="#"><img src="https://devfolio.co/telegram-color.svg" alt="Telegram"></a>
+              <a href="#"><img src="https://devfolio.co/twitter-color.svg" alt="X"></a>
+              <a href="#"><img src="https://devfolio.co/discord-color.svg" alt="Discord"></a>
+              <a href="#"><img src="https://devfolio.co/dribbble-color.svg" alt="Dribbble"></a>
+              <a href="#"><img src="https://devfolio.co/github-color.svg" alt="GitHub"></a>
+              <a href="#"><img src="https://devfolio.co/linkedin-color.svg" alt="LinkedIn"></a>
+              <a href="#"><img src="https://devfolio.co/farcaster-color.svg" alt="Notion"></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-links">
+              <div>
+                <h4>Community</h4>
+                <ul>
+                  <li><a href="#">Organize a hackathon</a></li>
+                  <li><a href="#">Explore hackathons</a></li>
+                  <li><a href="#">Code of Conduct</a></li>
+                  <li><a href="#">Brand Assets</a></li>
+                  <li><a href="#">Documentation</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Changelog</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Status</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="footer-note">
+            <h1>HackInsider</h1>
+            <p>© 2024, Hackathon Project</p>
+            
+          </div>
+      </footer>
+</body>
+<script src="organise.js"></script>
+</html>
